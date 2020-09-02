@@ -1,6 +1,6 @@
 package com.taigu.code.exception;
 
-import com.taigu.code.eunm.IResponseEnum;
+import com.taigu.code.eunm.base.BaseEnum;
 import com.taigu.code.exception.base.BaseException;
 
 /**
@@ -9,11 +9,8 @@ import com.taigu.code.exception.base.BaseException;
 public class BusinessException extends BaseException {
     private static final long serialVersionUID = 1L;
 
-    public BusinessException(IResponseEnum responseEnum, Object[] args, String message){
-        super(responseEnum, args, message);
+    public BusinessException(BaseEnum responseEnum, String message){
+        super(responseEnum, message);
     }
 
-    public BusinessException(IResponseEnum responseEnum, Object[] args, String message, Throwable cause){
-        super(responseEnum, args, message, cause);
-    }
 }

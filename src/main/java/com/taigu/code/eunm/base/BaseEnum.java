@@ -1,10 +1,10 @@
-package com.taigu.code.eunm;
+package com.taigu.code.eunm.base;
 
 /**
  *
  * @author Administrator
  */
-public interface IResponseEnum {
+public interface BaseEnum {
     /**
      * 获取状态码
      * @return
